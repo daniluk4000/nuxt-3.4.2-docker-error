@@ -1,0 +1,23 @@
+services:
+  frontend:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: nuxt-342-docker-error-daniluk4000
+    expose:
+      - 3000
+    ports:
+      - 3000:3000
+    command: /app/command.sh
+    volumes:
+      - ".:/app:rw"
+
+  frontend-no-volume:
+    build:
+      context: .
+      dockerfile: no-volume.Dockerfile
+    container_name: nuxt-342-docker-error-daniluk4000-withoutvolumes
+    expose:
+      - 3000
+    ports:
+      - 3001:3000
