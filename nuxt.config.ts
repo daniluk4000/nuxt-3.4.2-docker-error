@@ -2,3 +2,4 @@
 export default defineNuxtConfig({
 
 })
+g
