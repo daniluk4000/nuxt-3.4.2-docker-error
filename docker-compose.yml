@@ -17,6 +17,7 @@ services:
       context: .
       dockerfile: no-volume.Dockerfile
     container_name: nuxt-342-docker-error-daniluk4000-withoutvolumes
+    command: /app/command.sh
     expose:
       - 3000
     ports:
